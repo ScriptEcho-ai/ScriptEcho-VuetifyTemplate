@@ -7,13 +7,18 @@ import Vuetify from 'vite-plugin-vuetify'
 export default defineConfig({
   plugins: [vue(), Vuetify()],
   resolve: {
+    extensions: ['.js', '.vue', '.ts'],
     alias: [
       {
         find: "/@",
         replacement: resolve(__dirname, "src"),
       },
       {
-        find: "@1",
+        find: "@",
+        replacement: resolve(__dirname, "src"),
+      },
+      {
+        find: "ScriptEcho/lib",
         replacement: resolve(__dirname, "src"),
       },
     ]
