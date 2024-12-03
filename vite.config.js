@@ -13,7 +13,7 @@ export default defineConfig({
         replacement: resolve(__dirname, "src"),
       },
       {
-        find: "@",
+        find: "@1",
         replacement: resolve(__dirname, "src"),
       },
     ]
